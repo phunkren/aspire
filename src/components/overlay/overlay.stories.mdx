@@ -1,0 +1,47 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import styled from 'styled-components/macro';
+import { select, text, color, number } from '@storybook/addon-knobs';
+import { Overlay } from './';
+
+<Meta title="Components/Overlay" />
+
+# Overlay
+
+Place this component at the root of your application.
+You can find a short blog post explaining the component [here](https://ajames.dev/overlay-component).
+
+## Vertical (default)
+
+<Preview>
+  <Story name="vertical">
+    <div css="height: 250px;">
+      <Overlay
+        color={color('color:', '#000000')}
+        width={text('width:', `${100 / 12}%`)}
+        interval={text('interval:', `${100 / 12}%`)}
+        opacity={number('opacity:', 0.2)}
+        direction="vertical"
+      />
+    </div>
+  </Story>
+</Preview>
+
+## Horizontal
+
+<Preview>
+  <Story name="horizontal">
+    <div css="height: 250px;">
+      <Overlay
+        color={color('color:', '#000000')}
+        width={text('width:', `${100 / 12}%`)}
+        interval={text('interval:', `${100 / 12}%`)}
+        opacity={number('opacity:', 0.2)}
+        direction="horizontal"
+      />
+    </div>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Overlay} />
