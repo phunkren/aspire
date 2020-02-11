@@ -1,15 +1,16 @@
-import { RouteComponentProps, Router } from "@reach/router";
+import { RouteComponentProps } from '@reach/router';
 
-import React from "react";
+import React from 'react';
 
 export const Home = (props: RouteComponentProps) => {
-  const foo = "bang";
+  const foo = 'bang';
   let bar = 1;
   return (
     <div {...props}>
       <header className="App-header">
-        <p>
-          Edit lsc; <code>src/App.tsx</code> and save to reload.
+        <p className="y">
+          Edit lsc;
+          <code>src/App.tsx</code> and save to reload.
         </p>
         <a
           className="App-link"
