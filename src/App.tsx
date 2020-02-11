@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Router, Location } from '@reach/router';
+import { Home } from 'containers/Home';
+import { LocationContext } from 'contexts/location';
+import { Overlay } from 'components/overlay';
+import { Theme } from 'components/theme';
+import { GlobalStyles } from 'styles/global';
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Theme>
+      <Location>
+        {({ location }) => (
+          <LocationContext.Provider value={location}>
+            <GlobalStyles />
+            <Router>
+              <Home path="/" />
+            </Router>
+            <Overlay aria-hidden="true" />
+          </LocationContext.Provider>
+        )}
+      </Location>
+    </Theme>
   );
-}
+};
 
 export default App;
