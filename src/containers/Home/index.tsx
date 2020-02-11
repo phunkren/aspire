@@ -1,0 +1,24 @@
+import { RouteComponentProps } from "@reach/router";
+
+import React from "react";
+
+export const Home = (props: RouteComponentProps) => {
+  let foo = "bar";
+  return (
+    <div {...props}>
+      <header className="App-header">
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+};
