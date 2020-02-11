@@ -2,9 +2,11 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "typeRoots": ["./node_modules/@types", "./typings"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "baseUrl": "src",
     "allowSyntheticDefaultImports": true,
     "strict": false,
     "forceConsistentCasingInFileNames": true,
