@@ -1,4 +1,4 @@
-import { RouteComponentProps } from "@reach/router";
+import { RouteComponentProps, Router } from "@reach/router";
 
 import React from "react";
 
