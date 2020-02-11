@@ -10,7 +10,7 @@ export const Home = (props: RouteComponentProps) => {
       <header className="App-header">
         <p className="y">
           Edit lsc
-          <code>src/App.tsx</code> and save to reload.
+          <code> src/App.tsx</code> and save to reload.
         </p>
         <a
           className="App-link"
