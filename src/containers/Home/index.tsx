@@ -5,9 +5,8 @@ import React from "react";
 export const Home = (props: RouteComponentProps) => (
   <div {...props}>
     <header className="App-header">
-                    <p>
-        Edit <code>
-            src/App.tsx</code> and save to reload.
+      <p>
+        Edit <code>src/App.tsx</code> and save to reload.
       </p>
       <a
         className="App-link"
