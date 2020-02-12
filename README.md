@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Builds
+
+Site: [![Netlify Status](https://api.netlify.com/api/v1/badges/c12ce02a-d272-48b0-a679-5dddab33ea72/deploy-status)](https://app.netlify.com/sites/aspire2b/deploys)
+
+Storybook: [![Netlify Status](https://api.netlify.com/api/v1/badges/911f2b10-75dc-48dd-8c1c-b510bcfdba15/deploy-status)](https://app.netlify.com/sites/aspire2b-storybook/deploys)
+
 ## Available Scripts
 
 In the project directory, you can run:
